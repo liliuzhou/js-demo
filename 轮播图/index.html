@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+   *{margin: 0;padding: 0}
+   #div1{width: 660px;
+   	height: 130px;
+   margin: 200px auto;
+   position: relative;
+   background: red;
+   overflow: hidden;
+   }
+   #div1 ul li{
+   	list-style: none;
+   	float: left;
+   	
+
+   }
+   #div1 ul{
+   	width: 1320px;
+   	position: absolute;
+    left: 0;
+     top:0;
+   }
+	</style>
+	<script>
+     window.onload=function(){
+          var oul1=document.getElementsByTagName('ul')[0];
+          var oDiv1=document.getElementById('div1');
+          oul1.innerHTML=oul1.innerHTML+oul1.innerHTML;
+          
+           function move(){
+          	if (oul1.offsetLeft<"-660"){oul1.style.left="0"}
+          	else oul1.style.left=oul1.offsetLeft-2+"px"; }
+          var time= setInterval(move,30)
+          oDiv1.onmouseover=function(){clearInterval(time)}
+          oDiv1.onmouseout=function(){time=setInterval(move,30)};
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<div id="div1">
+       <ul>
+         <li><img src="1.jpg"></li>
+         <li><img src="2.jpg"></li>
+
+
+       </ul>
+
+
+
+
+	</div>
+</body>
+</html>

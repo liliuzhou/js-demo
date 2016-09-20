@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+     window.onload=function(){
+       var oUl=document.getElementById('ul1');
+    
+       var oBtn=document.getElementById("btn1");
+oBtn.onclick=function(){
+	var arr=[];
+	   var oLi=document.getElementsByTagName('li');
+   for (var i = 0;i<oLi.length; i++) {
+   	 arr[i]=oLi[i];
+   };
+   arr.sort(function(li1,li2){
+     var n1=parseInt(li1.innerHTML);
+	 var n2=parseInt(li2.innerHTML);
+      return n1 -n2;
+   	});
+	for (var i=0;i<arr.length;i++){
+  
+  oUl.appendChild(arr[i])}
+
+ };
+	 };
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+        <li>13</li>
+        <li>41</li>
+        <li>423</li>
+        <li>42</li>
+        <li>435</li>
+        <li>87</li>
+        <li>9</li>
+        
+	</ul>
+	<input type="button" id="btn1" value="pai">
+</body>
+</html>

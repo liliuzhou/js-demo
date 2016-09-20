@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script>
+	 function check(n){
+		if (n<10)
+		{
+		return "0"+n;
+			}
+			else{
+				return ""+n;
+				}
+		
+		}
+		
+	
+	
+	
+	setInterval(window.onload=function(){
+    var oImg=document.getElementsByTagName("img");
+	
+	var oDate=new Date()
+    var str=check(oDate.getHours())+check(oDate.getMinutes())+check(oDate.getSeconds())
+	
+    for(var i=0;i<oImg.length;i++){
+      oImg[i].src="img/"+str[i]+".png";
+    }
+	},1000)
+	window.onload=function(){
+    var oImg=document.getElementsByTagName("img");
+	
+	var oDate=new Date()
+    var str=check(oDate.getHours())+check(oDate.getMinutes())+check(oDate.getSeconds())
+	
+    for(var i=0;i<oImg.length;i++){
+      oImg[i].src="img/"+str[i]+".png";
+    }
+	}
+	</script>
+</head>
+<body>
+	<div>
+      <img src="img/3.png">
+      <img src="img/0.png">
+      <img src="img/0.png">
+      <img src="img/0.png">
+      <img src="img/6.png">
+      <img src="img/0.png">
+	</div>
+</body>
+</html>

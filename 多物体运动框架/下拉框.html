@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {$("#btn1").mouseover(function()
+            {
+                $("#div1").slideToggle()
+            });
+
+
+        });
+
+
+    </script>
+    <style>
+        #div1{
+            width:150px;
+            height: 200px;
+            background: #123393;
+            position: absolute;
+            left:50px;
+        }
+    </style>
+</head>
+<body>
+<input id="btn1" value="move" type="button">
+<div id="div1"></div>
+</body>
+</html>

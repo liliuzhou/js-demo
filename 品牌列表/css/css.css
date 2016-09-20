@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.div1{
+    width:300px;
+    height:150px;
+    border:1px solid black;
+    margin:100px auto;
+    padding: 10px;
+}
+.div2{
+    width:120px;
+    height:20px;
+    margin-left:90px;
+    margin-bottom:0;
+
+}
+.div1 ul li{
+    list-style-type: none;
+    margin-right:55px;
+    margin-bottom: 3px;
+    display:inline-block;;
+}
+.pro{
+    color:red;}
